@@ -21,86 +21,88 @@
 </head>
 
 <body>
+  <div class="wrap w-full h-[100vh] overflow-hidden">
+    <div class="sidebar fixed right-0 min-w-[20%] min-h-[100vh] right-[-100%] overflow-hidden ">
 
-  <div class="sidebar fixed right-0 min-w-[20%] min-h-screen right-[-100%] overflow-hidden">
+      <div class="w-full h-auto flex flex-col overflow-hidden ">
 
-    <div class="w-full h-auto flex flex-col overflow-hidden ">
+        <svg class="exit opacity-100 w-8 h-8 my-5 self-center  opacity-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path>
+        </svg>
 
-      <svg class="exit opacity-100 w-8 h-8 my-5 self-center  opacity-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-        <path fill="none" d="M0 0h24v24H0z"></path>
-        <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path>
-      </svg>
-
+      </div>
+      <div class="boxes-  mt-5 w-[100%] flex items-center flex-col gap-[12px] justify-center">
+        <a href="https://instagram.com">
+          <div class="elem w-[3.2rem] h-[3.2rem] rounded-full flex items-center justify-center bg-cover bg-bottom bg-[url('./insta.jpg')] bg-white"></div>
+        </a>
+        <a href="https://leetcode.com/problemset/all">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./leetcode.jpg')]"></div>
+        </a>
+        <a href="https://youtube.com">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./youtube.jpg')]"></div>
+        </a>
+        <a href="https://chat.openai.com">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./openai.jpg')]"></div>
+        </a>
+        <a href="https://tailwindcss.com">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./tailwind.jpg')]"></div>
+        </a>
+        <a href="https://blackbox.ai">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./blackbox.jpg')]"></div>
+        </a>
+        <a href="https://repl.it">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./replit.jpg')]"></div>
+        </a>
+        <a href="https://gemini.google.com">
+          <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./gemini.jpg')]"></div>
+        </a>
+      </div>
     </div>
-    <div class="boxes-  mt-5 w-[100%] flex items-center flex-col gap-[12px] justify-center">
-      <a href="https://instagram.com">
-        <div class="elem w-[3.2rem] h-[3.2rem] rounded-full flex items-center justify-center bg-cover bg-bottom bg-[url('./insta.jpg')] bg-white"></div>
-      </a>
-      <a href="https://leetcode.com/problemset/all">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./leetcode.jpg')]"></div>
-      </a>
-      <a href="https://youtube.com">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./youtube.jpg')]"></div>
-      </a>
-      <a href="https://chat.openai.com">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./openai.jpg')]"></div>
-      </a>
-      <a href="https://tailwindcss.com">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./tailwind.jpg')]"></div>
-      </a>
-      <a href="https://blackbox.ai">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./blackbox.jpg')]"></div>
-      </a>
-      <a href="https://repl.it">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./replit.jpg')]"></div>
-      </a>
-      <a href="https://gemini.google.com">
-        <div class="elem w-[3.2rem] h-[3.2rem]  rounded-full flex items-center justify-center bg-white bg-cover bg-center bg-[url('./gemini.jpg')]"></div>
-      </a>
+    <div class=" wrapper w-full h-screen bg-gradient-to-b from-gray-900 via-slate-900 to-gray-900 flex flex-col">
+      <div class="box fixed h-5 hidden w-5 rounded-full ">
+
+      </div>
+      <input type="text" name="text" id="text" class="search-input w-[80%] h-10 self-center rounded-full p-2 px-4 m-4 outline-0" placeholder="search your creativity">
+      <div class="description w-[80%] self-center">
+        <h2 class="text-[110%] text-white font-[cursive] m-6 ">I Am Vaibhav</h2>
+      </div>
+      <div class="boxes w-full h-auto flex flex-col items-center gap-5">
+        <div class="box- w-[80%] h-20 rounded-3xl flex flex-col items-center justify-evenly font-sm text-sm">
+          <div class="info-easy flex w-[80%] items-center justify-evenly">
+            <p class="text-white ">Easy</p>
+            <div class="line rounded-full h-[0.4rem] w-[60%] bg-[#42FFDA]"></div>
+          </div>
+          <div class="info-easy flex w-[80%] items-center justify-evenly">
+            <p class="text-white ">Hard</p>
+            <div class="line-lg rounded-full h-[0.4rem] w-[60%] bg-[#42FFDA]"></div>
+          </div>
+          <div class="info-easy flex w-[80%] items-center justify-evenly">
+            <p class="text-white ">Medium</p>
+            <div class="line-md rounded-full h-[0.4rem] w-[60%] bg-[#42FFDA]"></div>
+          </div>
+        </div>
+        <div class="box- box-2 w-[80%] h-20  rounded-3xl flex items-center justify-center">
+          <h1 class="text-3xl text-bold text-[#00FFED] italic outline-0 shadow-0">Coding is <span class="text-red-500 inline-block">Fun</span></h1>
+        </div>
+        <canvas id="drawingCanvas" class="realtive"></canvas>
+        <button class="clear-btn" class="absolute left-0 bottom rounded-md ">Clear</button>
+
+      </div>
+
+
+
+
     </div>
   </div>
-  <div class=" wrapper w-full h-screen bg-gradient-to-b from-gray-900 via-slate-900 to-gray-900 flex flex-col">
-    <div class="box fixed h-5 hidden w-5 rounded-full ">
-
-    </div>
-    <input type="text" name="text" id="text" class="search-input w-[80%] h-10 self-center rounded-full p-2 px-4 m-4 outline-0" placeholder="search your creativity">
-    <div class="description w-[80%] self-center">
-      <h2 class="text-[110%] text-white font-[cursive] m-6 ">I Am Vaibhav</h2>
-    </div>
-    <div class="boxes w-full h-auto flex flex-col items-center gap-5">
-      <div class="box- w-[80%] h-20 rounded-3xl flex flex-col items-center justify-evenly font-sm text-sm">
-        <div class="info-easy flex w-[80%] items-center justify-evenly">
-          <p class="text-white ">Easy</p>
-          <div class="line rounded-full h-[0.4rem] w-[60%] bg-[#42FFDA]"></div>
-        </div>
-        <div class="info-easy flex w-[80%] items-center justify-evenly">
-          <p class="text-white ">Hard</p>
-          <div class="line-lg rounded-full h-[0.4rem] w-[60%] bg-[#42FFDA]"></div>
-        </div>
-        <div class="info-easy flex w-[80%] items-center justify-evenly">
-          <p class="text-white ">Medium</p>
-          <div class="line-md rounded-full h-[0.4rem] w-[60%] bg-[#42FFDA]"></div>
-        </div>
-      </div>
-      <div class="box- box-2 w-[80%] h-20  rounded-3xl flex items-center justify-center">
-        <h1 class="text-3xl text-bold text-[#00FFED] italic outline-0 shadow-0" >Coding is <span class="text-red-500 inline-block" >Fun</span></h1>
-      </div>
-      <canvas id="drawingCanvas"class="realtive"></canvas>
-<button class="clear-btn" class="absolute left-0 bottom ">Clear</button>
-
-    </div>
-      
-  
 
 
-  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
+
   <script src="main.js">
 
   </script>
 </body>
 
-  </html>
-        
+                                                                                                                                                         </html>
