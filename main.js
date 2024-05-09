@@ -178,8 +178,50 @@ input.addEventListener('keydown',(e) => {
     
     let toBe = qry.split(" ").join("+")
     let query = `https://www.google.com/search?q=${toBe}`
-    input.value = ""
+    input.value = ""    
     window.location.href = query
   }
   console.log(e.keyCode)
 })
+// Function to handle mouse down event
+function handleMouseDown(e) {
+    if (isWithinCanvas(e.clientX, e.clientY)) {
+        isDrawing = true;
+        [lastX, lastY] = [e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop];
+    }
+}
+
+// Function to handle mouse move event
+function handleMouseMove(e) {
+    if (!isDrawing) return;
+    if (isWithinCanvas(e.clientX, e.clientY)) {
+        if (!eraserMode) {
+            draw(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        } else {
+            erase(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        }
+    }
+}
+
+// Function to handle mouse up event
+function handleMouseUp() {
+    isDrawing = false;
+}
+
+// Event listeners for mouse actions
+canvas.addEventListener('mousedown', handleMouseDown);
+canvas.addEventListener('mousemove', handleMouseMove);
+canvas.addEventListener('mouseup', handleMouseUp);
+// Function to move a fixed element with mouse cursor
+function moveFixedElementWithMouse(e) {
+    gsap.to('.box', {
+        x: e.clientX,
+        y: e.clientY,
+        ease: 'Power2.inOut',
+        duration: 0.3,
+        display: "block"
+    });
+}
+
+// Event listener for mousemove event
+window.addEventListener('mousemove', moveFixedElementWithMouse);
